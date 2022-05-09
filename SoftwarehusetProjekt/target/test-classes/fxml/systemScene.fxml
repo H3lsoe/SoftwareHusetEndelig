@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.systemScene">
+   <children>
+      <Label layoutX="578.0" layoutY="70.0" text="PMA">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="user_label" layoutX="868.0" layoutY="21.0" prefHeight="44.0" prefWidth="324.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list_project" editable="true" layoutX="72.0" layoutY="223.0" prefHeight="521.0" prefWidth="391.0" style="-fx-background-color: #e7e7e7;" />
+      <Label layoutX="73.0" layoutY="161.0" prefHeight="44.0" prefWidth="168.0" text="Projects">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="projectActivities" layoutX="272.0" layoutY="158.0" mnemonicParsing="false" onAction="#showProjectActivities" prefHeight="45.0" prefWidth="193.0" text="Show project">
+         <font>
+            <Font size="18.0" />
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="myProjects" layoutX="16.0" layoutY="17.0" mnemonicParsing="false" onAction="#showMyProjects" text="Show my projects">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_Employee" layoutX="958.0" layoutY="161.0" mnemonicParsing="false" onAction="#add_Employee" prefHeight="45.0" prefWidth="127.0" text="Add Employee" />
+      <TextField fx:id="add_Employee_holder" layoutX="942.0" layoutY="223.0" />
+      <Button layoutX="958.0" layoutY="286.0" mnemonicParsing="false" onAction="#add_project_action" prefHeight="46.0" prefWidth="127.0" text="Add Project" />
+      <TextField fx:id="add_project_textfield" layoutX="947.0" layoutY="348.0" />
+      <Button layoutX="958.0" layoutY="400.0" mnemonicParsing="false" onAction="#Delete_project_action" prefHeight="46.0" prefWidth="127.0" text="Delete Project" />
+      <TextField fx:id="delete_project_name" layoutX="947.0" layoutY="458.0" />
+   </children>
+</AnchorPane>
